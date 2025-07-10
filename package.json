@@ -4,7 +4,8 @@
   "description": "Shema MERN Stack Ecommerce application",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node server.js",    // Added start script
+    "dev": "nodemon server.js"    // Optional: add for automatic restarts in dev
   },
   "repository": {
     "type": "git",
@@ -15,5 +16,12 @@
   "bugs": {
     "url": "https://github.com/Bereky/shema-mern-ecommerce/issues"
   },
-  "homepage": "https://github.com/Bereky/shema-mern-ecommerce#readme"
+  "homepage": "https://github.com/Bereky/shema-mern-ecommerce#readme",
+  "dependencies": {
+    "dotenv": "^17.2.0",
+    "mongodb": "^6.17.0",
+    "express": "^4.17.1",      // Added express for server-side
+    "cors": "^2.8.5",          // Added cors for handling cross-origin requests
+    "mongoose": "^7.0.0"       // Added mongoose for MongoDB connection
+  }
 }
